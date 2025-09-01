@@ -97,7 +97,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _MaskAmount: 0.531
+    - _MaskAmount: 0.5
     - _MaskScale: 7.5
     - _ParallaxAmplitude: 1
     - _QueueControl: 0
