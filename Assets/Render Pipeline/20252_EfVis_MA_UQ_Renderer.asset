@@ -1,5 +1,39 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4677451992126952222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d613f08f173d4dd895bb07b3230baa9, type: 3}
+  m_Name: VoluemtricFog
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  passMaterial: {fileID: 2100000, guid: c65664b06e35e1545b3f8a0326c12b9b, type: 2}
+  injectionPoint: 550
+  requirements: 4
+  passIndex: 0
+--- !u!114 &-4649600683291829588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d613f08f173d4dd895bb07b3230baa9, type: 3}
+  m_Name: CustomVignette
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  passMaterial: {fileID: 2100000, guid: 1492382ddd239114ca742038026c0cd7, type: 2}
+  injectionPoint: 600
+  requirements: 4
+  passIndex: 0
 --- !u!114 &-3208940540600947095
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14,6 +48,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Active: 0
   passMaterial: {fileID: 2100000, guid: 5499fac2df7a74c4c8bbcde94f4cd0c6, type: 2}
+  injectionPoint: 600
+  requirements: 4
+  passIndex: 0
+--- !u!114 &-1881944230966201473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d613f08f173d4dd895bb07b3230baa9, type: 3}
+  m_Name: Distortion
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  passMaterial: {fileID: 2100000, guid: ae12b9e3cb603584f9da5ad04df5214a, type: 2}
   injectionPoint: 600
   requirements: 4
   passIndex: 0
@@ -35,7 +86,11 @@ MonoBehaviour:
   m_RendererFeatures:
   - {fileID: 7958682394383909017}
   - {fileID: -3208940540600947095}
-  m_RendererFeatureMap: 9980688578eb726e696e217c948d77d3
+  - {fileID: -1881944230966201473}
+  - {fileID: -4649600683291829588}
+  - {fileID: 8215322786040613208}
+  - {fileID: -4677451992126952222}
+  m_RendererFeatureMap: 9980688578eb726e696e217c948d77d37ff32962b1fde1e5ac1afa2cd04c79bf58891f198cb00272e26c5403325a16bf
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
@@ -89,5 +144,22 @@ MonoBehaviour:
   m_Active: 0
   passMaterial: {fileID: 2100000, guid: 5f35298d3a2596846befc3c4b8910019, type: 2}
   injectionPoint: 600
+  requirements: 4
+  passIndex: 0
+--- !u!114 &8215322786040613208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d613f08f173d4dd895bb07b3230baa9, type: 3}
+  m_Name: Outlines
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  passMaterial: {fileID: 2100000, guid: 209c2edb1ad6e9f43b6cb65f0db29ac6, type: 2}
+  injectionPoint: 550
   requirements: 4
   passIndex: 0
