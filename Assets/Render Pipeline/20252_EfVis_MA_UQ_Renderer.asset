@@ -90,7 +90,8 @@ MonoBehaviour:
   - {fileID: -4649600683291829588}
   - {fileID: 8215322786040613208}
   - {fileID: -4677451992126952222}
-  m_RendererFeatureMap: 9980688578eb726e696e217c948d77d37ff32962b1fde1e5ac1afa2cd04c79bf58891f198cb00272e26c5403325a16bf
+  - {fileID: 2320741463503267012}
+  m_RendererFeatureMap: 9980688578eb726e696e217c948d77d37ff32962b1fde1e5ac1afa2cd04c79bf58891f198cb00272e26c5403325a16bfc4e4a1b310ee3420
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
@@ -129,6 +130,23 @@ MonoBehaviour:
   m_CopyDepthMode: 1
   m_AccurateGbufferNormals: 0
   m_IntermediateTextureMode: 1
+--- !u!114 &2320741463503267012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d613f08f173d4dd895bb07b3230baa9, type: 3}
+  m_Name: Dither
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  passMaterial: {fileID: 2100000, guid: 02dfc2c835720ea4fb197e06f1de117c, type: 2}
+  injectionPoint: 600
+  requirements: 4
+  passIndex: 0
 --- !u!114 &7958682394383909017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,7 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d613f08f173d4dd895bb07b3230baa9, type: 3}
   m_Name: Outlines
   m_EditorClassIdentifier: 
-  m_Active: 1
+  m_Active: 0
   passMaterial: {fileID: 2100000, guid: 209c2edb1ad6e9f43b6cb65f0db29ac6, type: 2}
   injectionPoint: 550
   requirements: 4
